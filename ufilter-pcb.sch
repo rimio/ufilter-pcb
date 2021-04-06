@@ -1,0 +1,208 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LC-ladder Butterworth bandpass filter"
+Date "2021-04-05"
+Rev "r0"
+Comp "rimio (yo7jbp)"
+Comment1 "https://github.com/rimio/ufilter-pcb"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C2
+U 1 1 606C0D59
+P 4850 3500
+F 0 "C2" V 4713 3500 50  0000 C CNN
+F 1 "C_Small" V 4712 3500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4850 3500 50  0001 C CNN
+F 3 "~" H 4850 3500 50  0001 C CNN
+	1    4850 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L_Small L2
+U 1 1 606C5347
+P 5150 3500
+F 0 "L2" V 5061 3500 50  0000 C CNN
+F 1 "L_Small" V 5060 3500 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5150 3500 50  0001 C CNN
+F 3 "~" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 606CD13E
+P 4000 3800
+F 0 "#PWR01" H 4000 3550 50  0001 C CNN
+F 1 "GND" H 4005 3627 50  0000 C CNN
+F 2 "" H 4000 3800 50  0001 C CNN
+F 3 "" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 606D48DB
+P 6000 3800
+F 0 "#PWR04" H 6000 3550 50  0001 C CNN
+F 1 "GND" H 6005 3627 50  0000 C CNN
+F 2 "" H 6000 3800 50  0001 C CNN
+F 3 "" H 6000 3800 50  0001 C CNN
+	1    6000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 606D52FE
+P 4500 4000
+F 0 "#PWR02" H 4500 3750 50  0001 C CNN
+F 1 "GND" H 4505 3827 50  0000 C CNN
+F 2 "" H 4500 4000 50  0001 C CNN
+F 3 "" H 4500 4000 50  0001 C CNN
+	1    4500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 606D6925
+P 5500 4000
+F 0 "#PWR03" H 5500 3750 50  0001 C CNN
+F 1 "GND" H 5505 3827 50  0000 C CNN
+F 2 "" H 5500 4000 50  0001 C CNN
+F 3 "" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3500 4500 3500
+Wire Wire Line
+	4000 3700 4000 3800
+Wire Wire Line
+	6000 3700 6000 3800
+Wire Wire Line
+	5400 3850 5400 3900
+Wire Wire Line
+	5400 3900 5500 3900
+Wire Wire Line
+	5550 3900 5550 3850
+Wire Wire Line
+	5500 4000 5500 3900
+Connection ~ 5500 3900
+Wire Wire Line
+	5500 3900 5550 3900
+Wire Wire Line
+	4400 3850 4400 3900
+Wire Wire Line
+	4400 3900 4500 3900
+Wire Wire Line
+	4550 3900 4550 3850
+Wire Wire Line
+	4500 3900 4500 4000
+Connection ~ 4500 3900
+Wire Wire Line
+	4500 3900 4550 3900
+Wire Wire Line
+	4400 3650 4400 3600
+Wire Wire Line
+	4400 3600 4500 3600
+Wire Wire Line
+	4550 3600 4550 3650
+Wire Wire Line
+	4500 3500 4500 3600
+Connection ~ 4500 3500
+Wire Wire Line
+	4500 3500 4750 3500
+Connection ~ 4500 3600
+Wire Wire Line
+	4500 3600 4550 3600
+Wire Wire Line
+	5400 3600 5500 3600
+Wire Wire Line
+	5550 3600 5550 3650
+Wire Wire Line
+	5400 3600 5400 3650
+Wire Wire Line
+	5500 3600 5500 3500
+Wire Wire Line
+	5500 3500 5800 3500
+Connection ~ 5500 3600
+Wire Wire Line
+	5500 3600 5550 3600
+Wire Wire Line
+	5250 3500 5500 3500
+Connection ~ 5500 3500
+Wire Wire Line
+	5050 3500 4950 3500
+$Comp
+L Device:C_Small C1
+U 1 1 606BFE2F
+P 4550 3750
+F 0 "C1" H 4642 3750 50  0000 L CNN
+F 1 "C_Small" H 4642 3705 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4550 3750 50  0001 C CNN
+F 3 "~" H 4550 3750 50  0001 C CNN
+	1    4550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L1
+U 1 1 606C3083
+P 4400 3750
+F 0 "L1" H 4356 3750 50  0000 R CNN
+F 1 "L_Small" H 4356 3795 50  0001 R CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 3750 50  0001 C CNN
+F 3 "~" H 4400 3750 50  0001 C CNN
+	1    4400 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 606B59E8
+P 4000 3500
+F 0 "J1" H 4150 3550 50  0000 C CNN
+F 1 "Input" H 4200 3450 50  0000 C CNN
+F 2 "custom:SMA_Bundled_Edge_PCB" H 4000 3500 50  0001 C CNN
+F 3 " ~" H 4000 3500 50  0001 C CNN
+	1    4000 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 606B7293
+P 6000 3500
+F 0 "J2" H 6100 3550 50  0000 L CNN
+F 1 "Output" H 6100 3450 50  0000 L CNN
+F 2 "custom:SMA_Bundled_Edge_PCB" H 6000 3500 50  0001 C CNN
+F 3 " ~" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 606C1AF0
+P 5550 3750
+F 0 "C3" H 5642 3750 50  0000 L CNN
+F 1 "C_Small" H 5642 3705 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5550 3750 50  0001 C CNN
+F 3 "~" H 5550 3750 50  0001 C CNN
+	1    5550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L3
+U 1 1 606C4A0E
+P 5400 3750
+F 0 "L3" H 5356 3750 50  0000 R CNN
+F 1 "L_Small" H 5356 3795 50  0001 R CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5400 3750 50  0001 C CNN
+F 3 "~" H 5400 3750 50  0001 C CNN
+	1    5400 3750
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC
